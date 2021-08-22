@@ -98,7 +98,6 @@ nav {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 
   font-style: 400;
   font-weight: 500;
@@ -375,4 +374,7 @@ nav {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.contacts-icon {
+  fill: #2196f3;
 }
