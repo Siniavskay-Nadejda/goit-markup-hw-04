@@ -133,7 +133,6 @@ nav {
 
 /*Герой */
 .hero {
-  background-color: var(--bg-hero-footer-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -376,5 +375,25 @@ nav {
   color: var(--primary-text-color);
 }
 .contacts-icon {
+}
+
+.contacts-icon:hover {
   fill: #2196f3;
+}
+.tel-icon {
+}
+.tel-icon:hover {
+  fill: #2196f3;
+}
+/* Банер */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hiro.jpg);
+}
+
+.flex-icon {
+  display: flex;
 }
