@@ -130,6 +130,19 @@ nav {
 .contacts-nav .link:focus {
   color: var(--accent-text-color);
 }
+.contacts-icon {
+}
+
+.contacts-icon:hover,
+.contacts-icon:focus {
+  fill: #2196f3;
+}
+.tel-icon {
+}
+.tel-icon:hover,
+.tel-icon:focus {
+  fill: #2196f3;
+}
 
 /*Герой */
 .hero {
@@ -147,6 +160,19 @@ nav {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+}
+
+/* Банер */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hiro.jpg);
 }
 /* section */
 .section {
@@ -247,8 +273,8 @@ nav {
   border-bottom-right-radius: 4px;
   background-color: #ffffff;
   margin-right: 30px;
-  box-shadow: 0px, 2px rgba(0, 0, 0, 0.2), 0px, 1px rgba(0, 0, 0, 0.14), 0px,
-    1px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px, 0px, 2px rgba(0, 0, 0, 0.2), 1px, 0px,
+    1px rgba(0, 0, 0, 0.14), 3px, 0px, 1px rgba(0, 0, 0, 0.12);
 }
 
 .team .team-element:last-child {
@@ -281,15 +307,19 @@ nav {
 .social-kard {
   fill: #afb1b8;
 }
+.social-kard:hover,
+.social-kard:focus {
+  fill: #ffffff;
+}
 .social {
   width: 44px;
   height: 44px;
   padding: 12px;
 }
-.social:hover {
+.social:hover,
+.social:focus {
   border-radius: 100px;
   background-color: #2196f3;
-  fill: #ffffff;
 }
 .social:not(:last-child) {
   margin-right: 10px;
@@ -332,16 +362,44 @@ nav {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-flex {
+  display: flex;
+}
+.footer-flex:not(:first-child) {
+  margin-left: 70px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-style: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  line-height: 100%;
+  font-style: normal;
+  color: #ffffff;
+}
+.footer-cut {
+  width: 231px;
+}
+
+.flex-social-set {
+  display: flex;
+  padding-left: 0px;
+}
 .clients {
   display: flex;
   padding-left: 0px;
 }
+
 .clients-icon {
   width: 170px;
   height: 92px;
   border: solid#AFB1B8 1px;
   border-radius: 2px;
   padding: 16px 32px;
+}
+.clients-icon:hover {
+  fill: #2196f3;
 }
 .clients-icon:not(:last-child) {
   margin-right: 30px;
@@ -350,15 +408,11 @@ nav {
 .icon-logo {
   fill: #afb1b8;
 }
-.icon-logo:hover {
+.icon-logo:hover,
+.icon-logo:focus {
   fill: #2196f3;
 }
-.clients-icon:hover {
-  fill: #2196f3;
-}
-.icon-hover:hover {
-  fill: dodgerblue;
-}
+
 /* Стили для Партфолио */
 .flex-button {
   display: flex;
@@ -443,23 +497,4 @@ nav {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-}
-.contacts-icon {
-}
-
-.contacts-icon:hover {
-  fill: #2196f3;
-}
-.tel-icon {
-}
-.tel-icon:hover {
-  fill: #2196f3;
-}
-/* Банер */
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/герой.jpg);
 }
