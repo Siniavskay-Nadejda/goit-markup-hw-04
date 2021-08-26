@@ -130,14 +130,9 @@ nav {
 .contacts-nav .link:focus {
   color: var(--accent-text-color);
 }
-.contacts-icon {
-}
 
-.contacts-icon:hover,
-.contacts-icon:focus {
-  fill: #2196f3;
-}
 .tel-icon {
+  fill: #757575;
 }
 .tel-icon:hover,
 .tel-icon:focus {
@@ -372,7 +367,8 @@ nav {
 .footer-title {
   margin-bottom: 20px;
   font-weight: 400;
-
+  font-size: 14px;
+  line-height: 1.14;
   font-style: normal;
   color: #ffffff;
 }
