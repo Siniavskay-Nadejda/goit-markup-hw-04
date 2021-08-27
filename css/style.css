@@ -125,18 +125,16 @@ nav {
   color: var(--primary-text-colo);
 }
 .site-nav .link:hover,
-.site-nav .link:focus,
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
+.site-nav .link:focus {
   color: var(--accent-text-color);
 }
-
-.tel-icon {
-  fill: #757575;
+.link-icon-mail {
+  color: #757575;
 }
-.tel-icon:hover,
-.tel-icon:focus {
-  fill: #2196f3;
+.link-icon-mail:hover,
+.link-icon-mail:focus {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 /*Герой */
@@ -248,11 +246,13 @@ nav {
 }
 
 .icon-benefids {
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  align-items: center;
+  justify-content: center;
 }
 .icon-benefids:not(:last-child) {
   margin-right: 30px;
@@ -299,28 +299,24 @@ nav {
   padding: 0px 32px 30px 32px;
   margin-top: 16px;
 }
-.social-kard {
-  fill: #afb1b8;
-}
-.social-kard:hover,
-.social-kard:focus {
-  fill: #ffffff;
-}
 .social {
+  display: flex;
+}
+
+.social-link {
   width: 44px;
   height: 44px;
   padding: 12px;
+  fill: #afb1b8;
 }
-.social:hover,
-.social:focus {
+.social-link:hover,
+.social-link:focus {
   border-radius: 100px;
   background-color: #2196f3;
+  fill: #ffffff;
 }
 .social:not(:last-child) {
   margin-right: 10px;
-}
-
-.social-blok {
 }
 
 /* Футер */
@@ -380,30 +376,44 @@ nav {
   display: flex;
   padding-left: 0px;
 }
+.social-kard {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #afb1b8;
+}
+.social-kard:hover,
+.social-kard:focus {
+  border-radius: 100px;
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+/* Наши клиенты */
 .clients {
   display: flex;
   padding-left: 0px;
 }
 
 .clients-icon {
+  display: flex;
+}
+.icon-hover {
   width: 170px;
   height: 92px;
   border: solid#AFB1B8 1px;
   border-radius: 2px;
   padding: 16px 32px;
-}
-
-.clients-icon:not(:last-child) {
-  margin-right: 30px;
-}
-.clients-icon:hover {
-}
-.icon-logo {
   fill: #afb1b8;
 }
-.icon-logo:hover,
-.icon-logo:focus {
-  fill: #2196f3;
+.icon-hover:hover,
+.icon-hover:focus {
+  border: solid#2196f3 1px;
+  fill: var(--accent-text-color);
+}
+.clients-icon:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Стили для Партфолио */
@@ -424,6 +434,7 @@ nav {
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  border: 0px;
 }
 
 .button-filter:hover,
