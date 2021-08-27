@@ -117,7 +117,7 @@ nav {
 }
 
 .contacts-nav .link {
-  font-style: 400;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -128,13 +128,24 @@ nav {
 .site-nav .link:focus {
   color: var(--accent-text-color);
 }
+.item {
+  align-items: center;
+  justify-content: center;
+}
 .link-icon-mail {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
   color: #757575;
+  fill: #757575;
 }
 .link-icon-mail:hover,
 .link-icon-mail:focus {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
+}
+.tel-icon {
+  margin-right: 10px;
 }
 
 /*Герой */
@@ -382,13 +393,12 @@ nav {
   padding: 12px;
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: #afb1b8;
+  fill: #ffffff;
 }
 .social-kard:hover,
 .social-kard:focus {
   border-radius: 100px;
   background-color: #2196f3;
-  fill: #ffffff;
 }
 /* Наши клиенты */
 .clients {
